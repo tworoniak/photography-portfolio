@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+/* Global styles for html/body */
+@layer base {
+  html {
+    @apply bg-[#0a0a0a] text-[#e5e5e5];
+  }
+}
+
+/* Optional utility for subtle photo hover effect */
+@layer components {
+  .photo-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02];
+  }
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* Scroll to top */
+
+.scroll-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #666;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.95);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-to-top {
+    transition: none;
+  }
+}
