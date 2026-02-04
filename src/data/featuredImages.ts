@@ -58,10 +58,28 @@ export const featuredImages: Photo[] = [
     alt: 'Annicke Shireen with Heilung',
   },
   {
+    src: cldImage('bf063654-72bc-4248-a4b1-7d2e3cada001_rw_1920_mohw3l'),
+    width: 2,
+    height: 3,
+    alt: 'James Hetfield with Metallica',
+  },
+  {
     src: cldImage('b61cd8dd-1157-4681-bc76-c065a2cf5275_rw_3840_u4dw1o'),
     width: 3,
     height: 2,
     alt: 'Kriz DK',
+  },
+  {
+    src: cldImage('03d6bb04-aca8-4157-8e14-5a1ded28c2f5_rw_1920_s9ei4l'),
+    width: 2,
+    height: 3,
+    alt: 'Heilung',
+  },
+  {
+    src: cldImage('a97459a3-9701-4427-adc1-960bb5a487f2_rw_1920_j3i7vm'),
+    width: 3,
+    height: 2,
+    alt: 'Butcher Babies at the Riot Room in Kansas City, MO',
   },
   // add more featured images
 ];

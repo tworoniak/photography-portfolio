@@ -12,11 +12,12 @@ const GalleryPage = ({ band }: Props) => {
   const [index, setIndex] = useState<number | null>(null);
 
   return (
-    <div className='max-w-7xl mx-auto'>
-      <h1 className='text-3xl tracking-wide mb-6 text-accent font-bold'>
+    <div className='max-w-7xl mx-auto px-4 py-12'>
+      <h1 className='text-3xl tracking-wide mb-6 text-accent font-bold text-center'>
         {gallery.title}
       </h1>
-      <p>{gallery.description}</p>
+      <p className='text-center'>{gallery.description}</p>
+      <p className='text-center text-xs'>{gallery.concertDate}</p>
 
       <GalleryGrid photos={gallery.photos} onSelect={setIndex} />
 

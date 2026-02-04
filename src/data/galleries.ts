@@ -6,7 +6,8 @@ import { cldImage } from '../utils/cloudinary';
 export const galleries = {
   heilung: {
     title: 'Heilung',
-    description: 'Heilung performing at The Factory in Dallas, TX',
+    description: 'Heilung performing at Red Rocks Amphitheatre in Denver, CO',
+    concertDate: 'April 23, 2024',
     photos: [
       {
         src: cldImage('_TPW5744-DxO_DeepPRIME_XD2s_rjhtzu', {
@@ -95,6 +96,7 @@ export const galleries = {
     title: 'Jay Weinberg',
     description:
       'Jay Weinberg performing with Suicidal Tendencies in Hershey, PA',
+    concertDate: 'September 20, 2025',
     photos: [
       {
         src: cldImage('_TPW1347_miqqed', {

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
-    <div className='p-4 mt-8'>
+    <div className='max-w-7xl mx-auto px-4 py-12'>
       <h1 className='text-gray-200 font-bold text-2xl py-2 text-center mb-4'>
         Kansas City Music Photographer || Thomas Woroniak
       </h1>
@@ -19,7 +19,7 @@ const AboutPage = () => {
             <Link
               to='https://www.antiheromagazine.com'
               target='_blank'
-              className='text-red-500 hover:underline'
+              className='text-red-500 hover:underline md:underline-offset-2'
             >
               Antihero Magazine
             </Link>{' '}
@@ -52,7 +52,7 @@ const AboutPage = () => {
           <Link
             to='https://linktr.ee/antiherophotos'
             target='_blank'
-            className='hover:underline'
+            className='hover:underline md:underline-offset-2'
           >
             https://linktr.ee/antiherophotos
           </Link>

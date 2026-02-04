@@ -7,8 +7,8 @@ const FeaturedImages = () => {
   const [index, setIndex] = useState<number | null>(null);
 
   return (
-    <main className='max-w-7xl mx-auto px-4 py-12'>
-      <h1 className='text-3xl tracking-wide mb-6 text-accent'>
+    <div className='max-w-7xl mx-auto px-4 py-12'>
+      <h1 className='text-3xl tracking-wide mb-6 text-accent font-bold text-center'>
         Featured Images
       </h1>
 
@@ -21,7 +21,7 @@ const FeaturedImages = () => {
           onClose={() => setIndex(null)}
         />
       )}
-    </main>
+    </div>
   );
 };
 
