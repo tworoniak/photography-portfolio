@@ -30,10 +30,22 @@ export default function Services() {
   ];
 
   return (
-    <section className='w-full bg-neutral-950 text-white py-28'>
+    <section className='relative w-full bg-neutral-950 text-white py-28'>
+      {/* Background image */}
+      <div
+        className='absolute inset-0 bg-cover bg-center'
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/df6mhecko/image/upload/v1770166414/a97459a3-9701-4427-adc1-960bb5a487f2_rw_1920_j3i7vm.jpg')",
+        }}
+      />
+
+      {/* Dark overlay */}
+      <div className='absolute inset-0 bg-black/80' />
+
       <div className='max-w-7xl mx-auto px-6'>
         {/* Heading */}
-        <div className='mb-16 text-center'>
+        <div className='relative z-10 mb-16 text-center'>
           <h2 className='font-semibold text-4xl mb-4'>Services</h2>
           <p className='text-gray-400 max-w-2xl mx-auto leading-relaxed'>
             Professional concert photography services for bands, venues,
@@ -43,7 +55,7 @@ export default function Services() {
         </div>
 
         {/* Service cards */}
-        <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='relative z-10 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
           {services.map((service) => (
             <div
               key={service.title}
