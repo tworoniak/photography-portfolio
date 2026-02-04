@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import FeaturedGrid from '../components/FeaturedGrid';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,8 @@ export default function HomePage() {
       >
         View Galleries
       </Link>
+
+      <FeaturedGrid />
     </div>
   );
 }
