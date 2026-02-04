@@ -9,7 +9,7 @@ const Header = () => {
   const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false); // desktop dropdown
 
   return (
-    <header className='bg-[#0a0a0a] text-white shadow-md sticky top-0 z-50'>
+    <header className='bg-[#0a0a0a]/80 text-white shadow-md sticky top-0 z-50'>
       <div className='max-w-7xl mx-auto py-4 flex items-center justify-between'>
         {/* Logo */}
         <Link to='/' className='text-2xl font-bold'>
@@ -17,12 +17,15 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className='hidden md:flex items-center space-x-8'>
-          <Link to='/' className='hover:text-accent transition'>
+        <nav className='hidden md:flex items-center space-x-8 uppercase text-sm underline-offset-2'>
+          <Link to='/' className='hover:text-accent transition hover:underline'>
             Home
           </Link>
 
-          <Link to='/featured' className='hover:text-accent transition'>
+          <Link
+            to='/featured'
+            className='hover:text-accent transition hover:underline'
+          >
             Featured
           </Link>
 
@@ -33,7 +36,10 @@ const Header = () => {
               onMouseEnter={() => setIsDesktopDropdownOpen(true)}
               onMouseLeave={() => setIsDesktopDropdownOpen(false)}
             >
-              <Link to='/galleries' className='hover:text-accent transition'>
+              <Link
+                to='/galleries'
+                className='hover:text-accent transition uppercase hover:underline'
+              >
                 Galleries
               </Link>
             </button>
@@ -41,7 +47,7 @@ const Header = () => {
             {/* Dropdown */}
             {isDesktopDropdownOpen && (
               <div
-                className='absolute top-4 left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-md z-50'
+                className='absolute top-3 left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-md z-50'
                 onMouseEnter={() => setIsDesktopDropdownOpen(true)}
                 onMouseLeave={() => setIsDesktopDropdownOpen(false)}
               >
@@ -49,7 +55,7 @@ const Header = () => {
                   <Link
                     key={key}
                     to={`/galleries/${key}`}
-                    className='block px-4 py-2 hover:bg-gray-700 transition'
+                    className='block px-4 py-2 hover:bg-gray-700 transition normal-case'
                   >
                     {gallery.title}
                   </Link>
@@ -57,7 +63,10 @@ const Header = () => {
               </div>
             )}
           </div>
-          <Link to='/about' className='hover:text-accent transition'>
+          <Link
+            to='/about'
+            className='hover:text-accent transition hover:underline'
+          >
             About
           </Link>
         </nav>

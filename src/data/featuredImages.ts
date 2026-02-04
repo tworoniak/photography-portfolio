@@ -81,5 +81,23 @@ export const featuredImages: Photo[] = [
     height: 2,
     alt: 'Butcher Babies at the Riot Room in Kansas City, MO',
   },
+  {
+    src: cldImage('714d8746-159a-4dad-9875-6cfac6d2078f_rw_1920_qbrstl'),
+    width: 2,
+    height: 3,
+    alt: 'Kriz DK',
+  },
+  {
+    src: cldImage('15b3f41b-114a-4c86-b64f-7023b588fa5f_rw_1920_swdcg5'),
+    width: 3,
+    height: 2,
+    alt: 'Avatar',
+  },
+  {
+    src: cldImage('952d5efa-2aca-4574-9c41-ca17622446f6_rw_1920_btrvog'),
+    width: 2,
+    height: 3,
+    alt: "We're Wolves",
+  },
   // add more featured images
 ];
