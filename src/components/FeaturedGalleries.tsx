@@ -62,7 +62,7 @@ export default function FeaturedGalleries() {
 
           <Link
             to='/galleries'
-            className='inline-flex items-center justify-center text-center border border-white/30 px-4 py-2 text-sm uppercase tracking-wide hover:bg-white/50 hover:text-black transition'
+            className='inline-flex items-center justify-center text-center rounded-md border border-white/30 px-4 py-2 text-sm uppercase tracking-wide hover:bg-white/50 hover:text-black transition'
           >
             View All
           </Link>

@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
-import { galleries } from '../data/galleries';
+// import { galleries } from '../data/galleries';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // mobile dropdown
-  const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false); // desktop dropdown
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false); // mobile dropdown
+  // const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false); // desktop dropdown
 
   return (
     <header className='bg-[#0a0a0a]/50 text-white shadow-lg sticky top-0 z-50'>
@@ -29,8 +29,14 @@ const Header = () => {
             Featured
           </Link>
 
+          <Link
+            to='/galleries'
+            className='hover:text-accent transition uppercase hover:underline'
+          >
+            Galleries
+          </Link>
           {/* Desktop Galleries dropdown */}
-          <div className='relative'>
+          {/* <div className='relative'>
             <button
               className='hover:text-accent transition'
               onMouseEnter={() => setIsDesktopDropdownOpen(true)}
@@ -42,10 +48,10 @@ const Header = () => {
               >
                 Galleries
               </Link>
-            </button>
+            </button> */}
 
-            {/* Dropdown */}
-            {isDesktopDropdownOpen && (
+          {/* Dropdown */}
+          {/* {isDesktopDropdownOpen && (
               <div
                 className='absolute top-3 left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-md z-50'
                 onMouseEnter={() => setIsDesktopDropdownOpen(true)}
@@ -62,7 +68,7 @@ const Header = () => {
                 ))}
               </div>
             )}
-          </div>
+          </div> */}
           <Link
             to='/about'
             className='hover:text-accent transition hover:underline'
@@ -100,15 +106,23 @@ const Header = () => {
               Featured
             </Link>
 
+            <Link
+              to='/galleries'
+              className='hover:text-accent transition'
+              onClick={() => setIsOpen(false)}
+            >
+              Galleries
+            </Link>
+
             {/* Mobile Galleries collapsible */}
-            <button
+            {/* <button
               className='text-left hover:text-accent transition'
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Galleries
-            </button>
+            </button> */}
 
-            {isDropdownOpen && (
+            {/* {isDropdownOpen && (
               <div className='pl-4 flex flex-col space-y-1'>
                 {Object.entries(galleries).map(([key, gallery]) => (
                   <Link
@@ -121,7 +135,7 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
-            )}
+            )} */}
 
             <Link
               to='/about'

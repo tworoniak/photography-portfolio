@@ -31,7 +31,7 @@ export default function Hero() {
           <div className='flex gap-4'>
             <Link
               to='/galleries'
-              className='border border-white/80 px-8 py-3 uppercase tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
+              className='border border-white/80 px-8 py-3 uppercase rounded-md tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
             >
               View Galleries
             </Link>
