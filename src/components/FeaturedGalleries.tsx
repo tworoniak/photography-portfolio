@@ -20,12 +20,11 @@ export default function FeaturedGalleries() {
       date: 'April 23, 2024',
     },
     {
-      id: '2',
-      image:
-        'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1600&q=80',
-      band: 'Converge',
-      venue: 'The Bottleneck — Lawrence, KS',
-      date: 'Dec 12, 2025',
+      id: 'jinjer',
+      image: cldImage('_TPW3192_hcrohr'),
+      band: 'Jinjer',
+      venue: 'Uptown Theater — Kansas City, MO',
+      date: 'December 10, 2025',
     },
     {
       id: '3',

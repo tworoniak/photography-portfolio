@@ -11,6 +11,9 @@ const FeaturedImages = () => {
       <h1 className='text-3xl tracking-wide mb-6 text-accent font-bold text-center'>
         Featured Images
       </h1>
+      <p className='text-gray-400 text-center mb-10 w-full'>
+        A curated selection of concert, portrait, and commissioned photography.
+      </p>
 
       <GalleryGrid photos={featuredImages} onSelect={setIndex} />
 

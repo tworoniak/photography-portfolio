@@ -156,4 +156,67 @@ export const galleries = {
       },
     ] satisfies Photo[],
   },
+  jinjer: {
+    title: 'Jinjer',
+    description: 'Jinjer performing at the Uptown Theater in Kansas City, MO',
+    concertDate: 'December 10, 2025',
+    photos: [
+      {
+        src: cldImage('_TPW3019_e87ztq', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: cldImage('_TPW3246_ubjspx', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: cldImage('_TPW3192_hcrohr', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: cldImage('TPW06790_bhxzj6', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: cldImage('_TPW3033_udfo0s', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      {
+        src: cldImage('_TPW3209_ukdibt', {
+          //   width: 1600,
+          quality: 'auto:best',
+        }),
+        width: 3,
+        height: 2,
+      },
+      // {
+      //   src: cldImage('_TPW1359_nfvoj0', {
+      //     //   width: 1600,
+      //     quality: 'auto:best',
+      //   }),
+      //   width: 3,
+      //   height: 2,
+      // },
+    ] satisfies Photo[],
+  },
 };

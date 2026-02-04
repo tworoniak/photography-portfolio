@@ -12,50 +12,50 @@ type FeaturedImage = {
 const featuredImages: FeaturedImage[] = [
   {
     src: cldImage('e7421ec4-de22-4e62-b5c1-0db5e0557c3d_rw_1920_opydqg'),
-    colSpan: 'col-span-4',
-    rowSpan: 'row-span-2',
+    colSpan: 'col-span-2 md:col-span-4',
+    rowSpan: 'row-span-1 md:row-span-2',
   },
 
   {
     src: cldImage('85e598e6-4220-4195-976c-fde92dc5f140_rw_1920_dwtunj'),
-    colSpan: 'col-span-2',
+    colSpan: 'col-span-2 md:col-span-2',
   },
 
   {
     src: cldImage('cb5e8ec1-0319-4d76-b8df-ae604a09820d_rw_3840_t9zuno'),
-    colSpan: 'col-span-2',
+    colSpan: 'col-span-4 md:col-span-2',
   },
 
   {
     src: cldImage('a0f78ed3-644b-4c1e-aec2-4a3044e3a917_rw_1920_aa4fsf'),
-    colSpan: 'col-span-3',
-    rowSpan: 'row-span-3',
+    colSpan: 'col-span-2 md:col-span-3',
+    rowSpan: 'row-span-1 md:row-span-3',
   },
   {
     src: cldImage('13bc2068-aef9-4514-9464-afd5ddf90136_rw_1920_temo46'),
-    colSpan: 'col-span-1',
-    rowSpan: 'row-span-2',
+    colSpan: 'col-span-2 md:col-span-1',
+    rowSpan: 'row-span-1 md:row-span-2',
   },
 
   {
     src: cldImage('a97459a3-9701-4427-adc1-960bb5a487f2_rw_1920_j3i7vm'),
-    colSpan: 'col-span-1',
+    colSpan: 'col-span-4 md:col-span-1',
     rowSpan: 'row-span-1',
   },
   {
     src: cldImage('8fe2a9b3-4734-49b8-a95b-86d755b2ab85_rw_3840_wnrmau'),
-    colSpan: 'col-span-3',
+    colSpan: 'col-span-2 md:col-span-3',
     rowSpan: 'row-span-2',
   },
 
   {
     src: cldImage('a9976f65-5597-4615-85ab-1f43d99c6232_rw_1920_zcsakv'),
-    colSpan: 'col-span-1',
+    colSpan: 'col-span-2 md:col-span-1',
     rowSpan: 'row-span-1',
   },
   {
     src: cldImage('bf063654-72bc-4248-a4b1-7d2e3cada001_rw_1920_mohw3l'),
-    colSpan: 'col-span-1',
+    colSpan: 'col-span-2 md:col-span-1',
     rowSpan: 'row-span-1',
   },
   {
@@ -84,7 +84,7 @@ const FeaturedGrid = () => {
         </p>
 
         {/* Editorial grid */}
-        <div className='grid grid-cols-12 auto-rows-[200px] gap-2 relative'>
+        <div className='grid grid-cols-4 md:grid-cols-12 auto-rows-[200px] gap-2 relative'>
           {featuredImages.map((img, i) => (
             <div
               key={i}
