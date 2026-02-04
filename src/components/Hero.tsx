@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className='relative w-screen h-screen'>
@@ -27,12 +29,12 @@ export default function Hero() {
           </p>
 
           <div className='flex gap-4'>
-            <a
-              href='/galleries'
+            <Link
+              to='/galleries'
               className='border border-white px-8 py-3 uppercase tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
             >
               View Galleries
-            </a>
+            </Link>
 
             {/* <a
               href='/contact'
