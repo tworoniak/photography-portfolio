@@ -7,12 +7,12 @@ export default function AboutUs() {
       <div className='absolute inset-0 ' />
 
       {/* Content */}
-      <div className='relative z-10 max-w-7xl mx-auto px-6'>
+      <div className='relative z-10 max-w-7xl mx-auto px-8'>
         {/* Top row */}
         <div className='grid md:grid-cols-2 gap-16 items-start'>
           {/* Left */}
           <div>
-            <h2 className='font-semibold text-5xl mb-6'>About Us</h2>
+            <h2 className='font-semibold text-5xl mb-6'>About Me</h2>
 
             {/* Arrow */}
             <div className='mt-8'>
@@ -47,12 +47,12 @@ export default function AboutUs() {
         </div>
 
         {/* Stats */}
-        <div className='mt-24 flex justify-between items-center gap-8 w-full max-w-3xl mx-auto text-center'>
+        <div className='mt-24 flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-3xl mx-auto text-center'>
           <Stat value='+15' label='Years Experience' />
           <Divider />
-          <Stat value='+800' label='Live Shows Shot' />
+          <Stat value='+500' label='Live Shows Shot' />
           <Divider />
-          <Stat value='+120' label='Bands Photographed' />
+          <Stat value='+150' label='Bands Photographed' />
         </div>
       </div>
     </section>

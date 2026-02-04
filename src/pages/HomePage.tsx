@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import FeaturedGrid from '../components/FeaturedGrid';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
+import HomeCarousel from '../components/HomeCarousel';
+import Services from '../components/Services';
+import PublishedIn from '../components/PublishedIn';
 
 export default function HomePage() {
   return (
@@ -22,11 +25,13 @@ export default function HomePage() {
           View Galleries
         </Link>
       </div>
-
+      <HomeCarousel />
       <AboutUs />
 
       {/* Full-width section */}
       <FeaturedGrid />
+      <PublishedIn />
+      <Services />
     </>
   );
 }

@@ -13,12 +13,12 @@ export default function Hero() {
       />
 
       {/* Dark overlay */}
-      <div className='absolute inset-0 bg-black/60' />
+      <div className='absolute inset-0 bg-black/50' />
 
       {/* Content */}
       <div className='relative z-10 h-full flex items-center'>
         <div className='max-w-7xl mx-auto px-6 text-white'>
-          <h1 className='text-5xl md:text-7xl font-semibold tracking-tight mb-6'>
+          <h1 className='text-white/80 text-5xl md:text-7xl font-semibold tracking-tight uppercase mb-6'>
             Concert
             <br />
             Photography
