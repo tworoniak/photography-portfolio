@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs';
 import HomeCarousel from '../components/HomeCarousel';
 import Services from '../components/Services';
 import PublishedIn from '../components/PublishedIn';
+import FeaturedGalleries from '../components/FeaturedGalleries';
 
 export default function HomePage() {
   return (
@@ -27,11 +28,10 @@ export default function HomePage() {
       </div>
       <HomeCarousel />
       <AboutUs />
-
-      {/* Full-width section */}
       <FeaturedGrid />
       <PublishedIn />
       <Services />
+      <FeaturedGalleries />
     </>
   );
 }

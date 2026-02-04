@@ -81,7 +81,7 @@ export default function HomeCarousel() {
   };
 
   return (
-    <section className='w-screen bg-neutral-950 py-16'>
+    <section className='w-full bg-neutral-950 py-16'>
       <div className=' mx-auto px-6'>
         {/* Filmstrip */}
         <div
@@ -101,7 +101,7 @@ export default function HomeCarousel() {
                 w-60 sm:w-70 md:w-[320px]
                 h-90 sm:h-100 md:h-110
                 overflow-hidden bg-neutral-900
-                shadow-[0_10px_40px_rgba(0,0,0,0.45)]
+                shadow-[0_10px_40px_rgba(0,0,0,0.45)] transition duration-300 brightness-50 hover:brightness-100
               '
             >
               <img

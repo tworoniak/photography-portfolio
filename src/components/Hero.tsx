@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section className='relative w-screen h-screen'>
+    <section className='relative w-full h-screen'>
       {/* Background image */}
       <div
         className='absolute inset-0 bg-cover bg-center'
@@ -31,7 +31,7 @@ export default function Hero() {
           <div className='flex gap-4'>
             <Link
               to='/galleries'
-              className='border border-white px-8 py-3 uppercase tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
+              className='border border-white/80 px-8 py-3 uppercase tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
             >
               View Galleries
             </Link>

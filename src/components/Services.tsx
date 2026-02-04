@@ -30,7 +30,7 @@ export default function Services() {
   ];
 
   return (
-    <section className='w-screen bg-neutral-950 text-white py-28'>
+    <section className='w-full bg-neutral-950 text-white py-28'>
       <div className='max-w-7xl mx-auto px-6'>
         {/* Heading */}
         <div className='mb-16 text-center'>

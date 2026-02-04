@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <section className='relative w-screen bg-gray-900/50 text-white py-32'>
+    <section className='relative w-full bg-gray-900/50 text-white py-32'>
       {/* Subtle gradient / texture */}
       <div className='absolute inset-0 ' />
 
@@ -42,7 +43,14 @@ export default function AboutUs() {
             member of the Professional Photographers of America, Thomas combines
             his skills, dedication, and professional expertise to deliver
             compelling visuals that enhance the music experience and its
-            documentation.
+            documentation. <br />
+            <Link
+              to='/about'
+              className='inline-block px-4 py-2 mt-4 rounded-md border border-gray-700 bg-gray-900/50 hover:bg-gray-700 cursor-pointer hover:text-white group'
+            >
+              Read more
+              <ArrowRight className='inline ml-2' />
+            </Link>
           </p>
         </div>
 

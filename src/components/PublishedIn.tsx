@@ -8,7 +8,7 @@ export default function PublishedIn() {
   ];
 
   return (
-    <section className='w-screen bg-gray-900/30 text-white py-24'>
+    <section className='w-full bg-gray-900/30 text-white py-24'>
       <div className='max-w-7xl mx-auto px-6'>
         {/* Heading */}
         <div className='mb-14 text-center'>
