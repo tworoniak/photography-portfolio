@@ -2,8 +2,6 @@
 
 @import 'tailwindcss';
 
-/* @tailwind base;
-@tailwind components; */
 @tailwind utilities;
 
 /* Global styles for html/body */

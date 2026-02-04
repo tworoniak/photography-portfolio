@@ -19,7 +19,7 @@ export default function App() {
   return (
     <Router>
       <Header />
-      <main className=''>
+      <main className='h-screen'>
         <Routes>
           {/* Home page */}
           <Route path='/' element={<HomePage />} />

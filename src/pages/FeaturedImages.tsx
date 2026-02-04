@@ -1,5 +1,28 @@
+import { useState } from 'react';
+import { GalleryGrid } from '../components/GalleryGrid';
+import { LightboxModal } from '../components/LightboxModal';
+import { featuredImages } from '../data/featuredImages';
+
 const FeaturedImages = () => {
-  return <div>Featured Images</div>;
+  const [index, setIndex] = useState<number | null>(null);
+
+  return (
+    <main className='max-w-7xl mx-auto px-4 py-12'>
+      <h1 className='text-3xl tracking-wide mb-6 text-accent'>
+        Featured Images
+      </h1>
+
+      <GalleryGrid photos={featuredImages} onSelect={setIndex} />
+
+      {index !== null && (
+        <LightboxModal
+          photos={featuredImages}
+          index={index}
+          onClose={() => setIndex(null)}
+        />
+      )}
+    </main>
+  );
 };
 
 export default FeaturedImages;
