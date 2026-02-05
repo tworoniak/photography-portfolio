@@ -24,7 +24,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex z-10 space-x-4'>
               <img
-                src='public/images/image-daniel.jpg'
+                src='images/image-daniel.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />
@@ -57,7 +57,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
-                src='public/images/image-jonathan.jpg'
+                src='images/image-jonathan.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />
@@ -90,7 +90,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
-                src='public/images/image-kira.jpg'
+                src='images/image-kira.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />
@@ -123,7 +123,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
-                src='public/images/image-jeanette.jpg'
+                src='images/image-jeanette.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />
@@ -156,7 +156,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
-                src='public/images/image-patrick.jpg'
+                src='images/image-patrick.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />
@@ -189,7 +189,7 @@ const TestimonialGrid = () => {
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
-                src='public/images/image-kira.jpg'
+                src='images/image-kira.jpg'
                 alt=''
                 className='w-10 h-10 rounded-full ring-2 ring-purple-300'
               />

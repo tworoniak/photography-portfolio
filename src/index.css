@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@config "../tailwind.config.js";
+
 /* Global styles for html/body */
 @layer base {
   html {
