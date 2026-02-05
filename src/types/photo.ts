@@ -3,4 +3,7 @@ export type Photo = {
   width: number;
   height: number;
   alt?: string;
+  caption?: string;
+  title?: string;
+  description?: string;
 };

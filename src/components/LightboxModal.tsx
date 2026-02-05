@@ -8,24 +8,52 @@ type Props = {
   onClose: () => void;
 };
 
+type CustomSlide = {
+  src: string;
+  alt?: string;
+  caption?: string;
+  description?: string;
+};
+
 export const LightboxModal = ({ photos, index, onClose }: Props) => {
   return (
     <Lightbox
       open
       close={onClose}
       index={index}
-      slides={photos.map((p) => ({ src: p.src }))}
-      // Disable right-click and drag
+      slides={photos.map((p) => ({
+        src: p.src,
+        alt: p.alt,
+        caption: p.caption,
+        description: p.description,
+      }))}
       render={{
-        slide: ({ slide }) => (
-          <img
-            src={slide.src}
-            alt=''
-            className='max-w-full max-h-[80vh] select-none rounded-lg'
-            draggable={false} // prevent dragging
-            onContextMenu={(e) => e.preventDefault()} // prevent right-click
-          />
-        ),
+        slide: ({ slide }) => {
+          const s = slide as CustomSlide;
+
+          return (
+            <div className='flex flex-col items-center'>
+              <img
+                src={s.src}
+                alt={s.alt || s.caption || ''}
+                className='max-w-full max-h-[80vh] select-none rounded-lg'
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()}
+              />
+
+              {s.caption && (
+                <div>
+                  <p className='mt-4 text-center text-xs uppercase tracking-widest text-white/60'>
+                    {s.caption}
+                  </p>
+                  <p className='mt-1 text-center text-xs uppercase tracking-widest text-white/40'>
+                    {s.description}
+                  </p>
+                </div>
+              )}
+            </div>
+          );
+        },
       }}
     />
   );

@@ -6,6 +6,7 @@ import HomeCarousel from '../components/HomeCarousel';
 import Services from '../components/Services';
 import PublishedIn from '../components/PublishedIn';
 import FeaturedGalleries from '../components/FeaturedGalleries';
+import TestimonialGrid from '../components/TestimonialGrid';
 
 export default function HomePage() {
   return (
@@ -32,6 +33,7 @@ export default function HomePage() {
       <PublishedIn />
       <Services />
       <FeaturedGalleries />
+      <TestimonialGrid />
     </>
   );
 }

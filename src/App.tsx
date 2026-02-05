@@ -13,6 +13,7 @@ import GalleriesIndex from './pages/GalleriesIndex';
 import GalleryPage from './pages/GalleryPage';
 import FeaturedImages from './pages/FeaturedImages';
 import AboutPage from './pages/AboutPage';
+import MagazineImages from './pages/MagazineImages';
 import { galleries } from './data/galleries';
 
 export default function App() {
@@ -32,6 +33,9 @@ export default function App() {
 
           {/* Dynamic gallery page */}
           <Route path='/galleries/:band' element={<GalleryWrapper />} />
+
+          {/* Magazine/Tear Sheets page */}
+          <Route path='/magazines' element={<MagazineImages />} />
 
           {/* About page */}
           <Route path='/about' element={<AboutPage />} />

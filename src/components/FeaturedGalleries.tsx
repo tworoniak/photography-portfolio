@@ -27,12 +27,11 @@ export default function FeaturedGalleries() {
       date: 'December 10, 2025',
     },
     {
-      id: '3',
-      image:
-        'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=80',
-      band: 'Russian Circles',
-      venue: 'The Truman — Kansas City, MO',
-      date: 'Nov 30, 2025',
+      id: 'suicidaltendencies',
+      image: cldImage('TPW05906_vezoal'),
+      band: 'Suicidal Tendencies',
+      venue: 'HersheyStadium — Hershey, PA',
+      date: 'September 20, 2025',
     },
     {
       id: '4',

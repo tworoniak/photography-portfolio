@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Camera, Music, Image, Users } from 'lucide-react';
 
 export default function Services() {
@@ -8,24 +8,28 @@ export default function Services() {
       description:
         'High-energy stage and crowd shots captured with crisp detail in low-light venues.',
       icon: <Music className='w-6 h-6' />,
+      link: '/galleries',
     },
     {
       title: 'Band Promo Shoots',
       description:
         'Studio or on-location promo sessions designed for press kits, album releases, and social media.',
       icon: <Users className='w-6 h-6' />,
+      link: '/',
     },
     {
       title: 'Tour Coverage',
       description:
         'Full tour photo coverage including behind-the-scenes moments, live sets, and travel documentation.',
       icon: <Camera className='w-6 h-6' />,
+      link: '/',
     },
     {
       title: 'Editorial / Publication Work',
       description:
         'Photography tailored for magazines, blogs, and music publications with consistent delivery and style.',
       icon: <Image className='w-6 h-6' />,
+      link: '/magazines',
     },
   ];
 
@@ -57,7 +61,8 @@ export default function Services() {
         {/* Service cards */}
         <div className='relative z-10 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
           {services.map((service) => (
-            <div
+            <Link
+              to={service.link}
               key={service.title}
               className='
                 border border-white/10 bg-white/5
@@ -66,14 +71,16 @@ export default function Services() {
                 transition cursor-pointer
               '
             >
-              <div className='mb-6 text-white/80'>{service.icon}</div>
+              <div>
+                <div className='mb-6 text-white/80'>{service.icon}</div>
 
-              <h3 className='text-lg font-semibold mb-3'>{service.title}</h3>
+                <h3 className='text-lg font-semibold mb-3'>{service.title}</h3>
 
-              <p className='text-sm text-gray-400 leading-relaxed'>
-                {service.description}
-              </p>
-            </div>
+                <p className='text-sm text-gray-400 leading-relaxed'>
+                  {service.description}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
 
