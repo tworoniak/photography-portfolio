@@ -15,9 +15,9 @@ const TestimonialGrid = () => {
           </p>
         </div>
         {/* Grid Container */}
-        <div className='grid gap-6 grid-cols-1 text-white sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2'>
+        <div className='grid gap-6 grid-cols-1 text-white lg:grid-cols-2 xl:grid-cols-4 md:grid-rows-2'>
           {/* Box 1 */}
-          <div className='relative p-10 rounded-xl bg-gray-800 sm:col-span-1 md:col-span-2 shadow-lg'>
+          <div className='relative p-10 rounded-xl bg-gray-800 lg:col-span-1 xl:col-span-2 shadow-lg'>
             {/* Quotes Image */}
             <FaQuoteLeft className='absolute top-3 right-5 scale-125 md:top-7 md:right-24 md:scale-125 text-gray-400/50 w-25 h-25' />
 
@@ -53,7 +53,7 @@ const TestimonialGrid = () => {
           </div>
 
           {/* Box 2 */}
-          <div className='p-10 rounded-xl bg-gray-600 sm:col-span-1 shadow-lg'>
+          <div className='p-10 rounded-xl bg-gray-600 lg:col-span-1 xl:col-span-1 shadow-lg'>
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
@@ -86,7 +86,7 @@ const TestimonialGrid = () => {
           </div>
 
           {/* Box 3 */}
-          <div className='hidden p-10 rounded-xl text-gray-900 bg-white/80 md:block md:row-span-2 shadow-lg'>
+          <div className='hidden p-10 rounded-xl text-gray-900 bg-white/80 md:block lg:col-span-2 xl:col-span-1 xl:row-span-2 shadow-lg'>
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
@@ -152,7 +152,7 @@ const TestimonialGrid = () => {
           </div>
 
           {/* Box 5 */}
-          <div className='p-10 rounded-xl bg-gray-900 md:col-span-2 shadow-lg'>
+          <div className='p-10 rounded-xl bg-gray-900 lg:col-span-1 xl:col-span-2 shadow-lg'>
             {/* Box Header */}
             <div className='flex space-x-4'>
               <img
