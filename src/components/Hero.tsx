@@ -5,7 +5,7 @@ export default function Hero() {
     <section className='relative w-full h-screen'>
       {/* Background image */}
       <div
-        className='absolute inset-0 bg-cover bg-center'
+        className='absolute inset-0 bg-cover bg-center hue-rotate-180'
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2')",
@@ -13,7 +13,7 @@ export default function Hero() {
       />
 
       {/* Dark overlay */}
-      <div className='absolute inset-0 bg-black/50' />
+      <div className='absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent' />
 
       {/* Content */}
       <div className='relative z-10 h-full flex items-center'>
