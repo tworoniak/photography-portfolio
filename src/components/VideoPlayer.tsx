@@ -54,9 +54,9 @@ export default function VideoPlayer({
           Sorry, your browser doesn’t support embedded videos.
         </video>
         {/* Optional: tiny “loading” hint before metadata loads */}
-        {/* {!isReady && (
-          <div className='mt-2 text-xs text-muted'>Loading video…</div>
-        )} */}
+        {!isReady && (
+          <div className='mt-2 text-xs text-muted hidden'>Loading video…</div>
+        )}
       </div>
     </section>
   );
