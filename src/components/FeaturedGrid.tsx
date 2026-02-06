@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { cldImage } from '../utils/cloudinary';
+import { ArrowRight } from 'lucide-react';
 
 type FeaturedImage = {
   src: string;
@@ -101,14 +102,12 @@ const FeaturedGrid = () => {
           ))}
 
           {/* See more tile */}
-          <div className='w-64 p-8 bg-gray-900/50 rounded-lg flex items-center justify-center absolute bottom-0 right-0 hover:bg-gray-500/20 cursor-pointer'>
-            <Link
-              to='/featured'
-              className='text-white text-lg tracking-wide hover:text-accent transition'
-            >
-              See More →
-            </Link>
-          </div>
+          <Link
+            to='/featured'
+            className='text-text text-lg tracking-wide hover:text-text transition w-64 p-8 bg-surface/50 rounded-lg flex items-center justify-center absolute bottom-0 right-0 border border-muted/50 hover:bg-surface/70 hover:border-subtle cursor-pointer'
+          >
+            See More <ArrowRight className='ml-2' />
+          </Link>
         </div>
       </div>
     </section>

@@ -18,20 +18,20 @@ export default function Hero() {
       {/* Content */}
       <div className='relative z-10 h-full flex items-center -mt-16'>
         <div className='max-w-7xl mx-auto px-6 text-white'>
-          <h1 className='text-white/80 text-5xl md:text-7xl font-semibold tracking-tight uppercase mb-6'>
+          <h1 className='text-white/80 text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight uppercase mb-6 text-center md:text-left'>
             Concert
             <br />
             Photography
           </h1>
 
-          <p className='max-w-xl text-lg md:text-xl text-gray-200 mb-10'>
+          <p className='max-w-xl text-lg md:text-xl text-gray-200 mb-10 text-center md:text-left'>
             Capturing the raw energy of live performances from the pit.
           </p>
 
-          <div className='flex gap-4'>
+          <div className='flex items-center justify-center md:justify-start gap-4'>
             <Link
               to='/galleries'
-              className='border border-white/80 px-8 py-3 uppercase rounded-md tracking-wide text-sm hover:bg-white/50 hover:text-black transition'
+              className='border border-muted/80 px-8 py-3 uppercase rounded-md tracking-wide text-sm hover:bg-graphite/50 hover:text-muted transition'
             >
               View Galleries
             </Link>

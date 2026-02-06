@@ -46,7 +46,7 @@ export default function AboutUs() {
             documentation. <br />
             <Link
               to='/about'
-              className='inline-block px-4 py-2 mt-4 rounded-md border border-border bg-surface hover:bg-gray-700 cursor-pointer hover:text-text group'
+              className='inline-block px-4 py-2 mt-4 rounded-md border border-border bg-surface hover:bg-graphite/70 cursor-pointer hover:text-text group'
             >
               Read more
               <ArrowRight className='inline ml-2' />

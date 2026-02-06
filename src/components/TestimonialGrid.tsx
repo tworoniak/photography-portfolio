@@ -4,7 +4,7 @@ const TestimonialGrid = () => {
   return (
     <section className='w-full p-6 md:px-6 md:py-10 bg-card'>
       {/* Global Container */}
-      <div className='mx-auto  max-w-7xl p-2 '>
+      <div className='mx-auto  max-w-7xl p-2'>
         {/* Heading Container */}
         <div className='relative z-10 mb-16 text-center'>
           <h2 className='text-text font-semibold text-4xl mb-4'>
@@ -110,7 +110,7 @@ const TestimonialGrid = () => {
             </p>
 
             {/* Small Text */}
-            <p className='mt-6 opacity-50 line-clamp-6'>
+            <p className='mt-6 opacity-50'>
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
               expedita eos rem. Consectetur laboriosam fugit minima officiis est
               natus, sunt, quibusdam libero quas numquam, debitis laudantium

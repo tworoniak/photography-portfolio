@@ -88,7 +88,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className='md:hidden bg-gray-900 shadow-md'>
+        <nav className='md:hidden bg-surface shadow-md'>
           <div className='flex flex-col px-4 py-2 space-y-2'>
             <Link
               to='/'

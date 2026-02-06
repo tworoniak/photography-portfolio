@@ -8,7 +8,7 @@ const MagazineImages = () => {
 
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
-      <h1 className='text-3xl tracking-wide mb-6 text-accent font-bold text-center'>
+      <h1 className='text-3xl tracking-wide mb-6 text-text font-bold text-center'>
         Magazine Features / Tear Sheets
       </h1>
       <p className='text-gray-400 text-center mb-10 w-full'>
