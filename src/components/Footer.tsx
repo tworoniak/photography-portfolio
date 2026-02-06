@@ -5,37 +5,37 @@ import { SiLinktree } from 'react-icons/si';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className='bg-gray-900/50 px-8 pt-40 mt-24'>
+    <footer className='bg-card/50 px-8 pt-40 mt-4'>
       <div className='flex flex-col md:flex-row justify-center md:justify-between items-center mt-4 mb-8 py-8'>
-        <p className='text-gray-400 text-2xl uppercase font-bold text-center mb-8 md:mb-0'>
+        <p className='text-subtle text-2xl uppercase font-bold text-center mb-8 md:mb-0'>
           Thomas Woroniak Photography
         </p>
         <div className='flex gap-4'>
           <Link
             to='https://linktr.ee/antiherophotos'
             target='_blank'
-            className='hover:text-red-500 transition'
+            className='hover:text-accent transition'
           >
             <SiLinktree />
           </Link>
           <Link
             to='https://www.instagram.com/antiherophotos/'
             target='_blank'
-            className='hover:text-red-500 transition'
+            className='hover:text-accent transition'
           >
             <FaInstagram />
           </Link>
           <Link
             to='https://www.facebook.com/AntiHeroPhotos'
             target='_blank'
-            className='hover:text-red-500 transition'
+            className='hover:text-accent transition'
           >
             <FaFacebookSquare />
           </Link>
           <Link
             to='https://www.linkedin.com/in/thomasworoniak1/'
             target='_blank'
-            className='hover:text-red-500 transition'
+            className='hover:text-accent transition'
           >
             <FaLinkedin />
           </Link>

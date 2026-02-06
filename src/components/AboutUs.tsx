@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
-    <section className='relative w-full bg-gray-900/50 text-white py-32'>
+    <section className='relative w-full bg-surface text-white py-32'>
       {/* Subtle gradient / texture */}
       <div className='absolute inset-0 ' />
 
@@ -13,7 +13,7 @@ export default function AboutUs() {
         <div className='grid md:grid-cols-2 gap-16 items-start'>
           {/* Left */}
           <div>
-            <h2 className='font-semibold text-5xl mb-6'>About Me</h2>
+            <h2 className='text-text font-semibold text-5xl mb-6'>About Me</h2>
 
             {/* Arrow */}
             <div className='mt-8'>
@@ -23,12 +23,12 @@ export default function AboutUs() {
           </div>
 
           {/* Right */}
-          <p className='text-gray-400 leading-relaxed max-w-lg'>
+          <p className='text-subtle leading-relaxed max-w-lg'>
             Thomas Woroniak is a music photographer and founder of{' '}
             <Link
               to='https://www.antiheromagazine.com'
               target='_blank'
-              className='text-red-500 hover:underline md:underline-offset-2'
+              className='text-accent hover:underline md:underline-offset-2'
             >
               Antihero Magazine
             </Link>
@@ -46,7 +46,7 @@ export default function AboutUs() {
             documentation. <br />
             <Link
               to='/about'
-              className='inline-block px-4 py-2 mt-4 rounded-md border border-gray-700 bg-gray-900/50 hover:bg-gray-700 cursor-pointer hover:text-white group'
+              className='inline-block px-4 py-2 mt-4 rounded-md border border-border bg-surface hover:bg-gray-700 cursor-pointer hover:text-text group'
             >
               Read more
               <ArrowRight className='inline ml-2' />
@@ -70,8 +70,8 @@ export default function AboutUs() {
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <p className='font-serif text-4xl mb-2'>{value}</p>
-      <p className='text-gray-400 text-sm uppercase tracking-wide'>{label}</p>
+      <p className='text-text font-serif text-4xl mb-2'>{value}</p>
+      <p className='text-subtle text-sm uppercase tracking-wide'>{label}</p>
     </div>
   );
 }

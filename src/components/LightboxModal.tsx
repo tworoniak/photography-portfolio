@@ -43,10 +43,10 @@ export const LightboxModal = ({ photos, index, onClose }: Props) => {
 
               {s.caption && (
                 <div>
-                  <p className='mt-4 text-center text-xs uppercase tracking-widest text-white/60'>
+                  <p className='mt-4 text-center text-xs uppercase tracking-widest text-muted'>
                     {s.caption}
                   </p>
-                  <p className='mt-1 text-center text-xs uppercase tracking-widest text-white/40'>
+                  <p className='mt-1 text-center text-xs uppercase tracking-widest text-subtle'>
                     {s.description}
                   </p>
                 </div>

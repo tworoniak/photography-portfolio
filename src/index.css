@@ -9,7 +9,7 @@
 /* Global styles for html/body */
 @layer base {
   html {
-    @apply bg-[#0a0a0a] text-[#e5e5e5];
+    @apply bg-background text-text;
   }
 }
 

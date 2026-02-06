@@ -72,13 +72,13 @@ const featuredImages: FeaturedImage[] = [
 
 const FeaturedGrid = () => {
   return (
-    <section className='bg-black py-16'>
+    <section className='bg-background py-16'>
       <div className='w-full mx-auto px-4 md:px-8'>
         {/* Section header */}
-        <h3 className='text-3xl text-gray-300 text-center mb-4 uppercase font-semibold'>
+        <h3 className='text-4xl text-text text-center mb-4 font-semibold'>
           Featured Work
         </h3>
-        <p className='text-gray-400 text-center mb-10 w-full'>
+        <p className='text-subtle text-center mb-10 w-full'>
           A curated selection of concert, portrait, and commissioned
           photography.
         </p>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const AboutPage = () => {
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
-      <h1 className='text-gray-200 font-bold text-2xl py-2 text-center mb-4'>
+      <h1 className='text-muted font-bold text-2xl py-2 text-center mb-4'>
         Kansas City Music Photographer || Thomas Woroniak
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto'>
@@ -13,13 +13,13 @@ const AboutPage = () => {
           className='rounded-lg'
         />
         <div>
-          <p className='mb-4 text-gray-400'>
+          <p className='mb-4 text-subtle'>
             Thomas Woroniak's journey from Rockford, Illinois, to becoming a
             music photographer and the founder of{' '}
             <Link
               to='https://www.antiheromagazine.com'
               target='_blank'
-              className='text-red-500 hover:underline md:underline-offset-2'
+              className='text-accent hover:underline md:underline-offset-2'
             >
               Antihero Magazine
             </Link>{' '}
@@ -52,7 +52,7 @@ const AboutPage = () => {
           <Link
             to='https://linktr.ee/antiherophotos'
             target='_blank'
-            className='hover:underline md:underline-offset-2'
+            className='text-text hover:text-accent hover:underline md:underline-offset-2 transition'
           >
             https://linktr.ee/antiherophotos
           </Link>

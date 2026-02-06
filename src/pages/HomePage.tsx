@@ -7,6 +7,7 @@ import Services from '../components/Services';
 import PublishedIn from '../components/PublishedIn';
 import FeaturedGalleries from '../components/FeaturedGalleries';
 import TestimonialGrid from '../components/TestimonialGrid';
+import VideoPlayer from '../components/VideoPlayer';
 
 export default function HomePage() {
   return (
@@ -34,6 +35,15 @@ export default function HomePage() {
       <Services />
       <FeaturedGalleries />
       <TestimonialGrid />
+      <VideoPlayer
+        title='Showreel'
+        poster='videos/heilung-poster.png'
+        sources={[
+          { src: 'videos/heilung.mp4', type: 'video/mp4' },
+          // { src: 'https://your-cdn.com/showreel.webm', type: 'video/webm' },
+        ]}
+        controls
+      />
     </>
   );
 }
