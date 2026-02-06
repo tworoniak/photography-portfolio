@@ -17,18 +17,17 @@ export default function Hero() {
 
       {/* Content */}
       <div className='relative z-10 h-full flex items-center -mt-16'>
-        <div className='max-w-7xl mx-auto px-6 text-white'>
-          <h1 className='text-white/80 text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight uppercase mb-6 text-center md:text-left'>
-            Concert
-            <br />
-            Photography
+        <div className='max-w-7xl mx-auto px-6 text-white flex flex-col justify-center items-center'>
+          <img src='images/Thomas-Woroniak-white-high-res.png' alt='' />
+          <h1 className='text-white/80 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight uppercase mb-2 md:-mt-24 text-center md:text-left'>
+            Concert Photography
           </h1>
 
-          <p className='max-w-xl text-lg md:text-xl text-gray-200 mb-10 text-center md:text-left'>
+          <p className='max-w-xl text-lg md:text-xl text-gray-200 mb-10 text-center '>
             Capturing the raw energy of live performances from the pit.
           </p>
 
-          <div className='flex items-center justify-center md:justify-start gap-4'>
+          <div className='flex items-center justify-center gap-4 mb-8'>
             <Link
               to='/galleries'
               className='border border-muted/80 px-8 py-3 uppercase rounded-md tracking-wide text-sm hover:bg-graphite/50 hover:text-muted transition'

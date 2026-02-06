@@ -56,7 +56,11 @@ const GalleryWrapper = () => {
   const { band } = useParams<{ band: keyof typeof galleries }>();
 
   if (!band || !galleries[band])
-    return <div className='text-center py-12'>Gallery not found</div>;
+    return (
+      <div className='text-subtle text-center font-bold text-4xl py-12'>
+        Gallery not found
+      </div>
+    );
 
   return <GalleryPage band={band} />;
 };
