@@ -2,9 +2,9 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 const TestimonialGrid = () => {
   return (
-    <section className=' mx-auto w-full p-6 md:px-26 md:py-10 bg-card'>
+    <section className='w-full p-6 md:px-6 md:py-10 bg-card'>
       {/* Global Container */}
-      <div className='container ms-auto max-w-7xl p-2 '>
+      <div className='mx-auto  max-w-7xl p-2 '>
         {/* Heading Container */}
         <div className='relative z-10 mb-16 text-center'>
           <h2 className='text-text font-semibold text-4xl mb-4'>
