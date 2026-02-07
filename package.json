@@ -17,6 +17,7 @@
     "react-masonry-css": "^1.0.16",
     "react-photo-album": "^3.4.0",
     "react-router-dom": "^7.13.0",
+    "tech-stack-icons": "^3.5.8",
     "yet-another-react-lightbox": "^3.28.0"
   },
   "devDependencies": {

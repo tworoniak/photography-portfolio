@@ -14,6 +14,7 @@ import GalleryPage from './pages/GalleryPage';
 import FeaturedImages from './pages/FeaturedImages';
 import AboutPage from './pages/AboutPage';
 import MagazineImages from './pages/MagazineImages';
+import ScrollToTop from './components/ScrollToTop';
 import { galleries } from './data/galleries';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
     <Router>
       <Header />
       <main className=''>
+        <ScrollToTop />
         <Routes>
           {/* Home page */}
           <Route path='/' element={<HomePage />} />
