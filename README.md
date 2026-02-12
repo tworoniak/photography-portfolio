@@ -1,73 +1,90 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Photography Portfolio 📸
 
-Currently, two official plugins are available:
+A modern, dark-themed photography portfolio built with **React + TypeScript** featuring curated galleries, featured image collections, a carousel highlight reel, and a smooth lightbox viewing experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Designed as a clean, editorial-style portfolio site for showcasing concert photography, portraits, and commissioned work.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎞️ **Gallery Index**
+  - Displays all galleries in a responsive grid
+  - Each gallery links to its own dedicated page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Gallery Filtering**
+  - Filter galleries by band name using a search input
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🖼️ **Featured Images Page**
+  - Curated selection of standout work
+  - Opens in a lightbox with navigation + captions
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🌙 **Dark Cinematic UI**
+  - Tailored for photography presentation
+  - High contrast and minimal design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🎠 **Homepage Carousel**
+  - Horizontal scrolling filmstrip carousel
+  - Click-to-open lightbox modal
+
+- 🔎 **Lightbox Modal Viewer**
+  - Built with `yet-another-react-lightbox`
+  - Keyboard navigation + swipe support
+  - Captions displayed beneath images
+
+- ☁️ **Cloudinary Image Delivery**
+  - Optimized image loading via Cloudinary transformations
+  - Helper utility for consistent URL generation
+
+- ⬆️ **Scroll to Top on Navigation**
+  - Automatically scrolls to the top when changing routes
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+
+- **React**
+- **TypeScript**
+- **React Router**
+- **TailwindCSS**
+- **Lucide Icons**
+
+### Media & UI
+
+- **Cloudinary**
+- **yet-another-react-lightbox**
+
+### Tooling
+
+- **Vite**
+- **ESLint**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+src/
+  components/        # Reusable UI components (carousel, lightbox, grids, etc.)
+  pages/             # Route pages (Home, GalleriesIndex, GalleryDetail, FeaturedImages)
+  data/              # Gallery + featured image data
+  types/             # TypeScript types
+  utils/             # Cloudinary helper utilities
+  styles/            # Global styles (Tailwind layers)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
 ```
