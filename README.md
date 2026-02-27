@@ -1,10 +1,19 @@
-# React + TypeScript + Vite
-
 # Photography Portfolio 📸
 
 A modern, dark-themed photography portfolio built with **React + TypeScript** featuring curated galleries, featured image collections, a carousel highlight reel, and a smooth lightbox viewing experience.
 
 Designed as a clean, editorial-style portfolio site for showcasing concert photography, portraits, and commissioned work.
+
+---
+
+## 🚀 Live Demo
+
+[Photography Portfolio](https://photography-portfolio-iota-eight.vercel.app)
+
+![Portfolio screen 1.](/src/assets/screen-1.png 'Portfolio screen 1.')
+![Portfolio screen 2.](/src/assets/screen-2.png 'Portfolio screen 2.')
+![Portfolio screen 3.](/src/assets/screen-3.png 'Portfolio screen 3.')
+![Portfolio screen 4.](/src/assets/screen-4.png 'Portfolio screen 4.')
 
 ---
 
