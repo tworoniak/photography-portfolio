@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -28,12 +28,12 @@ export default function Hero() {
           </p>
 
           <div className='flex items-center justify-center gap-4 mb-8'>
-            <Link
+            {/* <Link
               to='/galleries'
               className='border border-muted/80 px-8 py-3 uppercase rounded-md tracking-wide text-sm hover:bg-graphite/50 hover:text-muted transition'
             >
               View Galleries
-            </Link>
+            </Link> */}
 
             {/* <a
               href='/contact'
