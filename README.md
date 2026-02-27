@@ -88,12 +88,57 @@ npm install
 
 ```
 src/
-  components/        # Reusable UI components (carousel, lightbox, grids, etc.)
-  pages/             # Route pages (Home, GalleriesIndex, GalleryDetail, FeaturedImages)
-  data/              # Gallery + featured image data
-  types/             # TypeScript types
-  utils/             # Cloudinary helper utilities
-  styles/            # Global styles (Tailwind layers)
+  assets/
+    screen-1.png
+    screen-2.png
+    screen-3.png
+    screen-4.png
+
+  components/
+    AboutUs.tsx
+    FeaturedGalleries.tsx
+    FeaturedGrid.tsx
+    FilterInput.tsx
+    Footer.tsx
+    GalleryGrid.tsx
+    Header.tsx
+    Hero.tsx
+    HomeCarousel.tsx
+    LightboxModal.tsx
+    PublishedIn.tsx
+    ScrollToTop.tsx
+    ScrollToTopButton.tsx
+    Services.tsx
+    TestimonialGrid.tsx
+    VideoEmbed.tsx
+    VideoPlayer.tsx
+    ViewGalleriesCTA.tsx
+
+  data/
+    featuredImages.ts
+    galleries.ts
+    magazines.ts
+
+  hooks/
+    useScrollPosition.ts
+
+  pages/
+    AboutPage.tsx
+    FeaturedImages.tsx
+    GalleriesIndex.tsx
+    GalleryPage.tsx
+    HomePage.tsx
+    MagazineImages.tsx
+
+  types/
+    photo.ts
+
+  utils/
+    cloudinary.ts
+
+  App.tsx
+  index.css
+  main.tsx
 
 
 ```
