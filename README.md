@@ -84,7 +84,7 @@ npm install
 
 ```
 
-### Project Structure
+## 🗂 Project Structure
 
 ```
 src/
