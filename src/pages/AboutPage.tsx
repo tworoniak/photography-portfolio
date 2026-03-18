@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import TechStackSection from '../components/TechStackSection';
 
 const AboutPage = () => {
   return (
@@ -6,7 +7,7 @@ const AboutPage = () => {
       <h1 className='text-muted font-bold text-2xl py-2 text-center mb-4'>
         Kansas City Music Photographer || Thomas Woroniak
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto'>
+      <section className='grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto'>
         <img
           src='https://res.cloudinary.com/df6mhecko/image/upload/v1770163286/1a7766f0-6f1c-4bc5-8369-f6c6fce032a2_rw_1920_aaeveq.jpg'
           alt='Thomas Woroniak'
@@ -57,7 +58,8 @@ const AboutPage = () => {
             https://linktr.ee/antiherophotos
           </Link>
         </div>
-      </div>
+      </section>
+      <TechStackSection />
     </div>
   );
 };
