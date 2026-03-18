@@ -104,7 +104,7 @@ const FeaturedGrid = () => {
           {/* See more tile */}
           <Link
             to='/featured'
-            className='text-text text-lg tracking-wide hover:text-text transition w-64 p-8 bg-surface/50 rounded-lg flex items-center justify-center absolute bottom-0 right-0 border border-muted/50 hover:bg-surface/70 hover:border-subtle cursor-pointer'
+            className='text-text text-lg tracking-wide hover:text-text transition w-64 p-4 bg-surface/80 rounded-lg flex items-center justify-center absolute bottom-0 right-0 border border-muted/50 hover:bg-surface/70 hover:border-subtle cursor-pointer'
           >
             See More <ArrowRight className='ml-2' />
           </Link>
