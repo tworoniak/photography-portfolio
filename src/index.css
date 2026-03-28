@@ -78,6 +78,22 @@ img {
   }
 }
 
+/* Gallery skeleton shimmer */
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.react-photo-album--photo {
+  background: linear-gradient(90deg, #18181d 25%, #26262e 50%, #18181d 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
 /* Filter Input */
 .filter {
   width: 100%;

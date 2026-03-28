@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { GalleryGrid } from '../components/GalleryGrid';
 import { LightboxModal } from '../components/LightboxModal';
 import { galleries } from '../data/galleries';
@@ -15,6 +16,13 @@ const GalleryPage = ({ band }: Props) => {
 
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
+      <Link
+        to='/galleries'
+        className='inline-flex items-center gap-1 text-sm text-white/50 hover:text-white transition mb-8'
+      >
+        ← All Galleries
+      </Link>
+
       <h1 className='text-3xl tracking-wide mb-6 text-text font-bold text-center'>
         {gallery.title}
       </h1>

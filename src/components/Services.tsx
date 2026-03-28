@@ -85,7 +85,7 @@ export function Services() {
         </div>
 
         {/* CTA */}
-        {/* <div className='mt-16 text-center'>
+        <div className='mt-16 text-center relative z-10'>
           <Link
             to='/contact'
             className='
@@ -97,7 +97,7 @@ export function Services() {
           >
             Book a Session
           </Link>
-        </div> */}
+        </div>
       </div>
     </section>
   );
