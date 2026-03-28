@@ -8,7 +8,7 @@ const heroBg = cldImage('e7421ec4-de22-4e62-b5c1-0db5e0557c3d_rw_1920_opydqg', {
 
 export function Hero() {
   return (
-    <section className='relative w-full h-screen'>
+    <section className='relative w-full h-[60vh] md:h-screen'>
       {/* Background image */}
       <div
         className='absolute inset-0 bg-cover bg-center '
@@ -24,6 +24,7 @@ export function Hero() {
           <img
             src='images/Thomas-Woroniak-white-high-res.png'
             alt='Thomas Woroniak Photography logo'
+            className='w-48 sm:w-64 md:w-auto'
           />
           <h1 className='text-white/80 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight uppercase mb-2 md:-mt-24 text-center md:text-left'>
             Concert Photography
