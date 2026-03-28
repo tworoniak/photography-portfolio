@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-export default function AboutUs() {
+export function AboutUs() {
   return (
     <section className='relative w-full bg-surface text-white py-32'>
       {/* Subtle gradient / texture */}

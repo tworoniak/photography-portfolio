@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Camera, Music, Image, Users } from 'lucide-react';
 
-export default function Services() {
+export function Services() {
   const services = [
     {
       title: 'Live Concert Photography',

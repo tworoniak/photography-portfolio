@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
-import TechStackSection from '../components/TechStackSection';
+import { TechStackSection } from '../components/TechStackSection';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 const AboutPage = () => {
+  usePageTitle('About');
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
       <h1 className='text-muted font-bold text-2xl py-2 text-center mb-4'>

@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useMemo, useState } from 'react';
 import { galleries } from '../data/galleries';
-import FilterInput from '../components/FilterInput';
+import { FilterInput } from '../components/FilterInput';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function GalleriesIndex() {
+  usePageTitle('Galleries');
   const [filter, setFilter] = useState('');
 
   const filteredGalleries = useMemo(() => {

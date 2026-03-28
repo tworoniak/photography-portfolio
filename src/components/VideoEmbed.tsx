@@ -4,7 +4,7 @@ type Props = {
   className?: string;
 };
 
-export default function VideoEmbed({
+export function VideoEmbed({
   url,
   title = 'Video',
   className = '',
@@ -24,7 +24,3 @@ export default function VideoEmbed({
   );
 }
 
-// Usage
-{
-  /* <VideoEmbed url="https://www.youtube.com/embed/VIDEO_ID" title="Showreel" /> */
-}

@@ -26,7 +26,7 @@ type FilterInputProps = {
   placeholder?: string;
 };
 
-export default function FilterInput({
+export function FilterInput({
   value,
   onChange,
   placeholder = 'Filter by band name…',

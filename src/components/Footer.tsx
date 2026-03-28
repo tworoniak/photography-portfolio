@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 import { SiLinktree } from 'react-icons/si';
 
-const Footer = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className='bg-card/50 px-8 pt-40 mt-4'>
@@ -11,34 +10,38 @@ const Footer = () => {
           Thomas Woroniak Photography
         </p>
         <div className='flex gap-4'>
-          <Link
-            to='https://linktr.ee/antiherophotos'
+          <a
+            href='https://linktr.ee/antiherophotos'
             target='_blank'
+            rel='noopener noreferrer'
             className='hover:text-accent transition'
           >
             <SiLinktree />
-          </Link>
-          <Link
-            to='https://www.instagram.com/antiherophotos/'
+          </a>
+          <a
+            href='https://www.instagram.com/antiherophotos/'
             target='_blank'
+            rel='noopener noreferrer'
             className='hover:text-accent transition'
           >
             <FaInstagram />
-          </Link>
-          <Link
-            to='https://www.facebook.com/AntiHeroPhotos'
+          </a>
+          <a
+            href='https://www.facebook.com/AntiHeroPhotos'
             target='_blank'
+            rel='noopener noreferrer'
             className='hover:text-accent transition'
           >
             <FaFacebookSquare />
-          </Link>
-          <Link
-            to='https://www.linkedin.com/in/thomasworoniak1/'
+          </a>
+          <a
+            href='https://www.linkedin.com/in/thomasworoniak1/'
             target='_blank'
+            rel='noopener noreferrer'
             className='hover:text-accent transition'
           >
             <FaLinkedin />
-          </Link>
+          </a>
         </div>
       </div>
       <p className='text-xs md:text-sm text-gray-400 text-center py-4'>
@@ -48,4 +51,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

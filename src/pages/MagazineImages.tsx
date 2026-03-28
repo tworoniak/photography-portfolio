@@ -2,8 +2,10 @@ import { useState } from 'react';
 import { GalleryGrid } from '../components/GalleryGrid';
 import { LightboxModal } from '../components/LightboxModal';
 import { magazineImages } from '../data/magazines';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 const MagazineImages = () => {
+  usePageTitle('Magazine Features');
   const [index, setIndex] = useState<number | null>(null);
 
   return (
