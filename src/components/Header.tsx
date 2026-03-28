@@ -75,6 +75,13 @@ export const Header = () => {
           >
             About
           </Link>
+
+          <Link
+            to='/contact'
+            className='hover:text-accent transition hover:underline'
+          >
+            Contact
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -143,6 +150,14 @@ export const Header = () => {
               onClick={() => setIsOpen(false)}
             >
               About
+            </Link>
+
+            <Link
+              to='/contact'
+              className='hover:text-accent transition'
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
             </Link>
           </div>
         </nav>

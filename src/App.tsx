@@ -14,6 +14,7 @@ import GalleryPage from './pages/GalleryPage';
 import FeaturedImages from './pages/FeaturedImages';
 import AboutPage from './pages/AboutPage';
 import MagazineImages from './pages/MagazineImages';
+import ContactPage from './pages/ContactPage';
 import { ScrollToTop } from './components/ScrollToTop';
 import { galleries } from './data/galleries';
 
@@ -41,6 +42,9 @@ export default function App() {
 
           {/* About page */}
           <Route path='/about' element={<AboutPage />} />
+
+          {/* Contact / booking page */}
+          <Route path='/contact' element={<ContactPage />} />
 
           {/* Redirect any unknown route to home */}
           <Route path='*' element={<Navigate to='/' />} />

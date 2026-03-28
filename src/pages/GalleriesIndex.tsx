@@ -11,9 +11,14 @@ export default function GalleriesIndex() {
   const filteredGalleries = useMemo(() => {
     const query = filter.trim().toLowerCase();
 
-    if (!query) return Object.entries(galleries);
+    const entries = Object.entries(galleries).sort(
+      ([, a], [, b]) =>
+        new Date(b.concertDate).getTime() - new Date(a.concertDate).getTime(),
+    );
 
-    return Object.entries(galleries).filter((entry) =>
+    if (!query) return entries;
+
+    return entries.filter((entry) =>
       entry[1].title.toLowerCase().includes(query),
     );
   }, [filter]);
