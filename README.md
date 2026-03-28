@@ -1,6 +1,6 @@
 # Photography Portfolio 📸
 
-A modern, dark-themed photography portfolio built with **React + TypeScript** featuring curated galleries, featured image collections, a carousel highlight reel, and a smooth lightbox viewing experience.
+A modern, dark-themed photography portfolio built with **React 19 + TypeScript** featuring curated galleries, featured image collections, a carousel highlight reel, and a smooth lightbox viewing experience.
 
 Designed as a clean, editorial-style portfolio site for showcasing concert photography, portraits, and commissioned work.
 
@@ -30,6 +30,9 @@ Designed as a clean, editorial-style portfolio site for showcasing concert photo
   - Curated selection of standout work
   - Opens in a lightbox with navigation + captions
 
+- 📰 **Magazine Features / Tear Sheets**
+  - Print publication features displayed in a masonry grid
+
 - 🌙 **Dark Cinematic UI**
   - Tailored for photography presentation
   - High contrast and minimal design
@@ -47,6 +50,9 @@ Designed as a clean, editorial-style portfolio site for showcasing concert photo
   - Optimized image loading via Cloudinary transformations
   - Helper utility for consistent URL generation
 
+- 📄 **Per-Route Page Titles**
+  - Each page sets a unique `document.title` (e.g. `Heilung | Thomas Woroniak Photography`)
+
 - ⬆️ **Scroll to Top on Navigation**
   - Automatically scrolls to the top when changing routes
 
@@ -56,20 +62,21 @@ Designed as a clean, editorial-style portfolio site for showcasing concert photo
 
 ### Frontend
 
-- **React**
+- **React 19**
 - **TypeScript**
-- **React Router**
-- **TailwindCSS**
-- **Lucide Icons**
+- **React Router v7**
+- **Tailwind CSS v4**
+- **Lucide Icons** + **React Icons**
 
 ### Media & UI
 
-- **Cloudinary**
-- **yet-another-react-lightbox**
+- **Cloudinary** — image hosting and transformation
+- **yet-another-react-lightbox** — lightbox viewer
+- **react-photo-album** — masonry photo grid
 
 ### Tooling
 
-- **Vite**
+- **Vite 7**
 - **ESLint**
 
 ---
@@ -80,9 +87,31 @@ Designed as a clean, editorial-style portfolio site for showcasing concert photo
 
 ```bash
 npm install
-
-
 ```
+
+### 2. Set up environment variables
+
+Create a `.env.local` file in the project root:
+
+```bash
+VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
+```
+
+> The dev server will throw a descriptive error on startup if this variable is missing.
+
+### 3. Start the dev server
+
+```bash
+npm run dev
+```
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+---
 
 ## 🗂 Project Structure
 
@@ -109,17 +138,20 @@ src/
     ScrollToTop.tsx
     ScrollToTopButton.tsx
     Services.tsx
+    TechStackSection.tsx
     TestimonialGrid.tsx
     VideoEmbed.tsx
     VideoPlayer.tsx
     ViewGalleriesCTA.tsx
 
   data/
+    carousel.ts
     featuredImages.ts
     galleries.ts
     magazines.ts
 
   hooks/
+    usePageTitle.ts
     useScrollPosition.ts
 
   pages/
@@ -139,6 +171,4 @@ src/
   App.tsx
   index.css
   main.tsx
-
-
 ```
