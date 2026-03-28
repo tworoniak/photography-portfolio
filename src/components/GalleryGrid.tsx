@@ -39,6 +39,17 @@ export const GalleryGrid = ({ photos, onSelect }: Props) => {
         padding={4}
         spacing={4}
         onClick={({ index }) => onSelect(index)}
+        render={{
+          image: (props) => (
+            <img
+              {...props}
+              style={{ ...props.style, opacity: 0, transition: 'opacity 0.4s ease' }}
+              onLoad={(e) => {
+                (e.currentTarget as HTMLImageElement).style.opacity = '1';
+              }}
+            />
+          ),
+        }}
       />
     </div>
   );
