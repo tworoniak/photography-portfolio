@@ -12,14 +12,21 @@ const setOgTitle = (value: string) => {
   tag.content = value;
 };
 
+const setCanonical = (href: string) => {
+  let tag = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!tag) {
+    tag = document.createElement('link');
+    tag.setAttribute('rel', 'canonical');
+    document.head.appendChild(tag);
+  }
+  tag.href = href;
+};
+
 export const usePageTitle = (title?: string) => {
   useEffect(() => {
     const full = title ? `${title} | ${BASE_TITLE}` : BASE_TITLE;
     document.title = full;
     setOgTitle(full);
-    return () => {
-      document.title = BASE_TITLE;
-      setOgTitle(BASE_TITLE);
-    };
+    setCanonical(window.location.origin + window.location.pathname);
   }, [title]);
 };
