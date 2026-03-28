@@ -18,7 +18,7 @@ type Props = {
   playsInline?: boolean; // important on iOS
 };
 
-export default function VideoPlayer({
+export function VideoPlayer({
   sources,
   poster,
   title,
@@ -62,28 +62,3 @@ export default function VideoPlayer({
   );
 }
 
-// Standard video usage
-{
-  /* <VideoPlayer
-  title="Showreel"
-  poster="https://your-cdn.com/poster.jpg"
-  sources={[
-    { src: "https://your-cdn.com/showreel.mp4", type: "video/mp4" },
-    { src: "https://your-cdn.com/showreel.webm", type: "video/webm" },
-  ]}
-  controls
-/> */
-}
-
-// Background hero video usage
-{
-  /* <VideoPlayer
-  className="absolute inset-0"
-  sources={[{ src: "https://your-cdn.com/hero.mp4", type: "video/mp4" }]}
-  autoPlay
-  loop
-  muted
-  controls={false}
-  playsInline
-/> */
-}

@@ -1,6 +1,6 @@
 import { FaQuoteLeft } from 'react-icons/fa';
 
-const TestimonialGrid = () => {
+export const TestimonialGrid = () => {
   return (
     <section className='w-full p-6 md:px-6 md:py-10 bg-card'>
       {/* Global Container */}
@@ -224,4 +224,3 @@ const TestimonialGrid = () => {
   );
 };
 
-export default TestimonialGrid;

@@ -71,7 +71,7 @@ const featuredImages: FeaturedImage[] = [
   },
 ];
 
-const FeaturedGrid = () => {
+export const FeaturedGrid = () => {
   return (
     <section className='bg-background py-16'>
       <div className='w-full mx-auto px-4 md:px-8'>
@@ -114,4 +114,3 @@ const FeaturedGrid = () => {
   );
 };
 
-export default FeaturedGrid;

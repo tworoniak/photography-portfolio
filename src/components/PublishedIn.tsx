@@ -1,4 +1,4 @@
-export default function PublishedIn() {
+export function PublishedIn() {
   const publications = [
     'Antihero Magazine',
     'Guitar World',

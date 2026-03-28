@@ -1,6 +1,6 @@
 import StackIcon from 'tech-stack-icons';
 
-const TechStackSection = () => {
+export const TechStackSection = () => {
   return (
     <section className='flex flex-col gap-2 mx-auto max-w-7xl px-6 py-12'>
       <p className='text-xs uppercase tracking-[0.3em] text-zinc-500'>
@@ -20,4 +20,3 @@ const TechStackSection = () => {
   );
 };
 
-export default TechStackSection;

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { GalleryGrid } from '../components/GalleryGrid';
 import { LightboxModal } from '../components/LightboxModal';
 import { galleries } from '../data/galleries';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 type Props = {
   band: keyof typeof galleries;
@@ -9,6 +10,7 @@ type Props = {
 
 const GalleryPage = ({ band }: Props) => {
   const gallery = galleries[band];
+  usePageTitle(gallery.title);
   const [index, setIndex] = useState<number | null>(null);
 
   return (

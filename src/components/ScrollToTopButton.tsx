@@ -1,7 +1,7 @@
 import { useScrollPosition } from '../hooks/useScrollPosition';
 import { ArrowUp } from 'lucide-react';
 
-const ScrollToTopButton: React.FC = () => {
+export const ScrollToTopButton: React.FC = () => {
   const isVisible = useScrollPosition(300);
 
   const scrollToTop = () => {
@@ -22,4 +22,3 @@ const ScrollToTopButton: React.FC = () => {
   );
 };
 
-export default ScrollToTopButton;

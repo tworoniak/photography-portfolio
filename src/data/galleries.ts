@@ -7,6 +7,7 @@ export const galleries = {
   heilung: {
     title: 'Heilung',
     description: 'Heilung performing at Red Rocks Amphitheatre in Denver, CO',
+    venue: 'Red Rocks — Morrison, CO',
     concertDate: 'April 23, 2024',
     photos: [
       {
@@ -116,6 +117,7 @@ export const galleries = {
     title: 'Jay Weinberg',
     description:
       'Jay Weinberg performing with Suicidal Tendencies in Hershey, PA',
+    venue: 'Hershey Park Stadium — Hershey, PA',
     concertDate: 'September 20, 2025',
     photos: [
       {
@@ -193,6 +195,7 @@ export const galleries = {
   jinjer: {
     title: 'Jinjer',
     description: 'Jinjer performing at the Uptown Theater in Kansas City, MO',
+    venue: 'Uptown Theater — Kansas City, MO',
     concertDate: 'December 10, 2025',
     photos: [
       {
@@ -202,8 +205,8 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
-        alt: 'alt',
-        caption: 'caption',
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
       {
         src: cldImage('_TPW3246_ubjspx', {
@@ -212,6 +215,8 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
       {
         src: cldImage('_TPW3192_hcrohr', {
@@ -220,6 +225,8 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
       {
         src: cldImage('TPW06790_bhxzj6', {
@@ -228,6 +235,8 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
       {
         src: cldImage('_TPW3033_udfo0s', {
@@ -236,6 +245,8 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
       {
         src: cldImage('_TPW3209_ukdibt', {
@@ -244,12 +255,15 @@ export const galleries = {
         }),
         width: 3,
         height: 2,
+        alt: 'Jinjer performing at the Uptown Theater',
+        caption: 'Jinjer — Uptown Theater, Kansas City, MO',
       },
     ] satisfies Photo[],
   },
   suicidaltendencies: {
     title: 'Suicidal Tendencies',
     description: 'Suicidal Tendencies performing in Hershey, PA',
+    venue: 'Hershey Park Stadium — Hershey, PA',
     concertDate: 'September 20, 2025',
     photos: [
       {

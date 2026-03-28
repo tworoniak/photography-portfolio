@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 // import { galleries } from '../data/galleries';
 
-const Header = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
   // const [isDropdownOpen, setIsDropdownOpen] = useState(false); // mobile dropdown
   // const [isDesktopDropdownOpen, setIsDesktopDropdownOpen] = useState(false); // desktop dropdown
@@ -151,4 +151,3 @@ const Header = () => {
   );
 };
 
-export default Header;

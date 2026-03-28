@@ -1,50 +1,7 @@
 import { Link } from 'react-router-dom';
-import { cldImage } from '../utils/cloudinary';
+import { galleries } from '../data/galleries';
 
-type Gallery = {
-  id: string;
-  image: string;
-  band: string;
-  venue: string;
-  date: string; // "Feb 3, 2026" or ISO
-};
-
-export default function FeaturedGalleries() {
-  // Replace with your real galleries (or load from API)
-  const galleries: Gallery[] = [
-    {
-      id: 'heilung',
-      image: cldImage('_TPW5805-DxO_DeepPRIME_XD2s_swr4ok'),
-      band: 'Heilung',
-      venue: 'Red Rocks — Morrison, CO',
-      date: 'April 23, 2024',
-    },
-    {
-      id: 'jinjer',
-      image: cldImage('_TPW3192_hcrohr'),
-      band: 'Jinjer',
-      venue: 'Uptown Theater — Kansas City, MO',
-      date: 'December 10, 2025',
-    },
-    {
-      id: 'suicidaltendencies',
-      image: cldImage('TPW05906_vezoal'),
-      band: 'Suicidal Tendencies',
-      venue: 'HersheyStadium — Hershey, PA',
-      date: 'September 20, 2025',
-    },
-    {
-      id: '4',
-      image:
-        'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=80',
-      band: 'Baroness',
-      venue: 'The Granada — Lawrence, KS',
-      date: 'Oct 21, 2025',
-    },
-
-    // Add up to 8 for a fuller grid
-  ];
-
+export function FeaturedGalleries() {
   return (
     <section className='w-full bg-neutral-950 text-white py-24'>
       <div className='max-w-7xl mx-auto px-6'>
@@ -68,10 +25,10 @@ export default function FeaturedGalleries() {
 
         {/* Grid */}
         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
-          {galleries.map((g) => (
+          {Object.entries(galleries).map(([slug, gallery]) => (
             <Link
-              key={g.id}
-              to={`/galleries/${g.id}`}
+              key={slug}
+              to={`/galleries/${slug}`}
               className='
                 group rounded-xl overflow-hidden
                 border border-white/10 bg-white/5
@@ -81,8 +38,8 @@ export default function FeaturedGalleries() {
               {/* Image */}
               <div className='relative h-56 overflow-hidden'>
                 <img
-                  src={g.image}
-                  alt={`${g.band} at ${g.venue}`}
+                  src={gallery.photos[0].src}
+                  alt={`${gallery.title} at ${gallery.venue}`}
                   className='h-full w-full object-cover transition duration-500 group-hover:scale-105'
                   loading='lazy'
                 />
@@ -94,12 +51,12 @@ export default function FeaturedGalleries() {
               {/* Meta */}
               <div className='p-5'>
                 <p className='font-semibold text-lg leading-snug mb-1'>
-                  {g.band}
+                  {gallery.title}
                 </p>
-                <p className='text-sm text-gray-400 mb-3'>{g.venue}</p>
+                <p className='text-sm text-gray-400 mb-3'>{gallery.venue}</p>
 
                 <p className='text-xs uppercase tracking-widest text-white/70'>
-                  {g.date}
+                  {gallery.concertDate}
                 </p>
               </div>
             </Link>

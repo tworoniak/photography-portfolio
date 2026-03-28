@@ -1,15 +1,17 @@
-import FeaturedGrid from '../components/FeaturedGrid';
-import Hero from '../components/Hero';
-import AboutUs from '../components/AboutUs';
-import HomeCarousel from '../components/HomeCarousel';
-import Services from '../components/Services';
-import PublishedIn from '../components/PublishedIn';
-import FeaturedGalleries from '../components/FeaturedGalleries';
-import TestimonialGrid from '../components/TestimonialGrid';
-import VideoPlayer from '../components/VideoPlayer';
-import ViewGalleries from '../components/ViewGalleriesCTA';
+import { FeaturedGrid } from '../components/FeaturedGrid';
+import { Hero } from '../components/Hero';
+import { AboutUs } from '../components/AboutUs';
+import { HomeCarousel } from '../components/HomeCarousel';
+import { Services } from '../components/Services';
+import { PublishedIn } from '../components/PublishedIn';
+import { FeaturedGalleries } from '../components/FeaturedGalleries';
+import { TestimonialGrid } from '../components/TestimonialGrid';
+import { VideoPlayer } from '../components/VideoPlayer';
+import { ViewGalleries } from '../components/ViewGalleriesCTA';
+import { usePageTitle } from '../hooks/usePageTitle';
 
 export default function HomePage() {
+  usePageTitle();
   return (
     <>
       <Hero />

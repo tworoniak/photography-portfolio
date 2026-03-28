@@ -5,16 +5,16 @@ import {
   Navigate,
   useParams,
 } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ScrollToTopButton from './components/ScrollToTopButton';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import HomePage from './pages/HomePage';
 import GalleriesIndex from './pages/GalleriesIndex';
 import GalleryPage from './pages/GalleryPage';
 import FeaturedImages from './pages/FeaturedImages';
 import AboutPage from './pages/AboutPage';
 import MagazineImages from './pages/MagazineImages';
-import ScrollToTop from './components/ScrollToTop';
+import { ScrollToTop } from './components/ScrollToTop';
 import { galleries } from './data/galleries';
 
 export default function App() {

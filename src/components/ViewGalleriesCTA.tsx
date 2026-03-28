@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ViewGalleries = () => {
+export const ViewGalleries = () => {
   return (
     <section className='flex flex-col justify-center items-center mx-8 xl:mx-auto md:max-w-7xl mt-8 px-8 py-24 text-center rounded-lg bg-surface border border-faint/50'>
       <div className=''>
@@ -23,4 +23,3 @@ const ViewGalleries = () => {
   );
 };
 
-export default ViewGalleries;
